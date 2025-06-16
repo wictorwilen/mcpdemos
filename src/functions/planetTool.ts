@@ -27,7 +27,7 @@ app.mcpTool("getPlanets", {
             includeMoons?: boolean;
         };
 
-        if (mcptoolargs.includeMoons) {
+        if (mcptoolargs.includeMoons === true) {
             return JSON.stringify(planets);
         } else {
             return JSON.stringify(planets.map(planet => ({ name: planet.name })));
