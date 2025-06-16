@@ -4,11 +4,11 @@ import { app, InvocationContext, input, output } from "@azure/functions";
 app.mcpTool("getPlanets", {
     toolName: "getPlanets",
     description: "Retrieve a list of planets in the solar system",
-    toolProperties: {
+    toolProperties: [{
         propertyName: "includeMoons",
         propertyType: "boolean",
         description: "If true, include moons of each planet in the response",
-    },
+    }],
     handler: async (
         _toolArguments: unknown,
         context: InvocationContext) => {
