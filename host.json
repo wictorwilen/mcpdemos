@@ -10,5 +10,15 @@
   "extensionBundle": {
     "id": "Microsoft.Azure.Functions.ExtensionBundle.Experimental",
     "version": "[4.*, 5.0.0)"
+  },
+  "extensions": {
+    "mcp": {
+      "instructions": "Used to lookup planets and moons in the solar system.",
+      "serverName": "Planets MCP Server",
+      "serverVersion": "2.0.0",
+      "messageOptions": {
+        "useAbsoluteUriForEndpoints": true
+      }
+    }
   }
 }
